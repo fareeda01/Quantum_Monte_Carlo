@@ -54,11 +54,12 @@ def parse_vmc_input(input_file):
     }
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
+    if len(sys.argv) != 2:   # input file argument in addition to input_parser.py
         print(f"Usage: python {sys.argv[0]} <input_file>", file=sys.stderr)
-        sys.exit(1)
+        sys.exit(1)   # exit the code if the input file argument is not given
 
-    input_file = sys.argv[1]
+    input_file = sys.argv[1]  # sys.argv[1] is input file
+    # parse parameters using parse_vmc_input function from input file
     try:
         params = parse_vmc_input(input_file)
     except InvalidInputError as e:
