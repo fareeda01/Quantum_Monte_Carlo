@@ -49,7 +49,7 @@ def parse_vmc_input(input_file):
         "charge": charge,
         "nuclei_coords": coords,
         "n_electrons": n_elec,
-        "exponent": zeta,
+        "exponent": [zeta],
         "no_of_steps": n_steps
     }
 
