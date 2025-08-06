@@ -2,11 +2,10 @@ import numpy as np
 from input_parser import parse_vmc_input
 from vmc_algorithm import metropolis
 from local_energy import local_energy
-from wavefunction import wavefunction  # if separate
+from wavefunction import wavefunction  
 from quantum_force import quantum_force
 import sys
 
-# Entry point
 def run_simulation(input_file):
     # Parse input
     params = parse_vmc_input(input_file)
